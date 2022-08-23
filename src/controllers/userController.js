@@ -17,6 +17,7 @@ const userController = {
 
     processRegister: function(req, res){
         let file = req.file
+        console.log(file)
         
         const errors = validationResult(req)
 

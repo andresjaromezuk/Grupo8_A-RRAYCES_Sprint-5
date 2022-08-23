@@ -20,7 +20,6 @@ function multerMiddleware(folder, entity){
 
 }
 
-
 module.exports = multerMiddleware;
 
 
