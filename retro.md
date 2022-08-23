@@ -1,4 +1,4 @@
-# Grupo8_Index7_Sprint2
+# Grupo8_Index7_Sprint5
 ★ Archivo retro.md con el resultado de la retrospectiva. 
 
 ## RETROSPECTIVA 🔁:
