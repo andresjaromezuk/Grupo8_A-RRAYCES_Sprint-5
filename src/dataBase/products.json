@@ -2,7 +2,7 @@
  {
   "id": 1,
   "name": "Fittonia",
-  "description": "",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   "type": "planta",
   "size": "small",
   "price": "3000",
@@ -16,7 +16,7 @@
  {
   "id": 2,
   "name": "Ficus elástica",
-  "description": "",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   "type": "planta",
   "size": "small",
   "price": "5300",
@@ -30,7 +30,7 @@
  {
   "id": 3,
   "name": "Nerium Oleander",
-  "description": "",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   "type": "planta",
   "size": "small",
   "price": "7600",
@@ -58,7 +58,7 @@
  {
   "id": 5,
   "name": "Begonia Maculata",
-  "description": "",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   "image": [
    "begonia-maculata1.jpg",
    "begonia-maculata2.jpg"
@@ -72,7 +72,7 @@
  {
   "id": 6,
   "name": "Syngonium Albo",
-  "description": "",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   "image": [
    "syngonium-albo1.jpg",
    "syngonium-albo2.jpg"
@@ -86,7 +86,7 @@
  {
   "id": 7,
   "name": "Tradescantia Pallida",
-  "description": "",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   "image": [
    "tradescantia-pallida1.jpg",
    "tradescantia-pallida2.jpg"
@@ -100,7 +100,7 @@
  {
   "id": 8,
   "name": "Tradescantia Anthurium",
-  "description": "",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   "image": [
    "tradescantia-anthurium1.jpg",
    "tradescantia-anthurium2.jpg"
@@ -113,7 +113,7 @@
  },
  {
   "name": "Lavandula Angustifolia",
-  "description": "",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   "type": "planta",
   "size": "medium",
   "price": "4500",
@@ -127,7 +127,7 @@
  },
  {
   "name": "Exótica",
-  "description": "",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   "type": "maceta",
   "size": "medium",
   "price": "4900",
@@ -141,7 +141,7 @@
  },
  {
   "name": "Prisma",
-  "description": "",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   "type": "maceta",
   "size": "small",
   "price": "1800",
@@ -156,7 +156,7 @@
  {
   "id": 12,
   "name": "Terracota",
-  "description": "    ",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   "type": "maceta",
   "size": "medium",
   "price": "2500",
@@ -170,7 +170,7 @@
  {
   "id": 13,
   "name": "Tetris",
-  "description": "",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   "type": "maceta",
   "size": "small",
   "price": "1200",
@@ -183,7 +183,7 @@
  },
  {
   "name": "Perlita - piedra caliza",
-  "description": "",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   "type": "cuidados",
   "size": "small",
   "price": "800",
@@ -197,7 +197,7 @@
  },
  {
   "name": "Sustrato",
-  "description": "",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   "type": "cuidados",
   "size": "small",
   "price": "800",
@@ -211,7 +211,7 @@
  },
  {
   "name": "Neem Potásico Gotero",
-  "description": "",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   "type": "cuidados",
   "size": "small",
   "price": "1200",
