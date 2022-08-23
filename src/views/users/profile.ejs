@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head.ejs') %> 
+<body>
+
+    <%- include('../partials/header.ejs') %> 
+    <main class="userProfile">
+        <%console.log(locals.userLogged)%>
+        <h1 class="userWelcome"> ¡Hola <strong><%= locals.userLogged.userName %></strong>!</h1>
+        <div class="userInfo">
+            <figure class="userAvatar">
+                <img src="/images/users/<%= locals.userLogged.images %>" alt="Imagen de perfil">
+            </figure>
+            <div class="userData">
+                <p class="infoTitle">Información de usuario</p>
+                <div class="completeName">
+                    <p class="dataTitle">Nombre y apellido</p>
+                    <p class="userName"><%= locals.userLogged.firstName%> <%= locals.userLogged.lastName %></p>
+                </div>
+                <div class="userDatabase">
+                    <p class="dataTitle">Email</p>
+                    <p class="userEmail"> <%= locals.userLogged.email %></p>
+                </div>
+            </div>
+        </div>
+    </main>
+<footer>
+
+    <%- include('../partials/footer.ejs') %> 
+    
+</footer>
+</body>
+</html>

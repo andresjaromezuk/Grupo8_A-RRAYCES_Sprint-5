@@ -1,0 +1,83 @@
+<section class="productDetailSection">
+    <p class="productDetailName">Productos / Plantas / <strong><%= producto.name %> </strong></p>
+    <div class="productDetail">
+        <figure class="productImage">
+            <div class="smallImages">
+                <img src="/images/<%= producto.image[0] %>" alt="Planta" class="default">
+                <img src="/images/<%= producto.image[1] %>" alt="Encuadre hoja">
+            </div>
+            <div class="bigImage">
+                <img src="/images/<%= producto.image[0] %>" alt="Planta">
+            </div>
+        </figure>
+        <div class="productDetailInfo">
+            <h3 class="productDetailTitle"><%= producto.name %></h3>
+            <p class="productDetailPrice">$<%= producto.price %></p>
+            <div class="payment">
+                <p>6 cuotas sin interés de <strong>$<%= producto.fees %></strong></p>
+                <a href=""><p class="method">Ver medios de pago</p></a>
+            </div>
+            <form class="productDetailDescription">
+                <div class="size">
+                    <label>Tamaño</label>
+                    <select name="tamaño">
+                        <option value="small"> S (Small)</option>
+                        <option value="medium"> M (Medium)</option>
+                        <option value="large"> L (Large)</option>
+                        <option value="extra-large"> XL (Extra Large)</option>
+                    </select>
+                </div>
+                <div class="amount">
+                    <p>Cantidad</p>
+                    <div class="productDetailAmount">
+                        <i class="fas fa-minus" id="minus"></i>
+                        <span> 1 </span>
+                        <i class="fas fa-plus" id="plus"></i>
+                    </div> 
+                </div>
+                <div class="productDetailButton">
+                    <a href="/users/cart"><button type="submit">  AGREGAR AL CARRITO  </button></a>
+                </div>
+                <div class="productDetailDelivery">
+                    <select name="productDetailDelivery">
+                        <option>Elegí el medio de envío </option>
+                        <option>Retiro en el local</option>
+                        <option>Envío a domicilio</option>
+                    </select>
+                </div>  
+            </form>
+            <div class="productDescription">
+                <h4> Te contamos más sobre <%= producto.name%> </h4>
+                <p> <%= producto.description%></p> 
+            </div>
+            <% if (locals.userLogged && locals.userLogged.admin == true) { %>
+                <div class="adminButtons">
+                    <form action="/products/edit/<%= producto.id %>" method="get">
+                        <button type="submit">EDITAR</button>
+                    </form>
+                <!-- <a href="/products/edit/<%#= producto.id %>"> EDITAR PRODUCTO</a> -->  
+                    <form action="/products/delete/<%= producto.id %>?_method=DELETE" method="post">
+                        <button type="submit">ELIMINAR</button>
+                    </form>
+                </div>
+            <% } %>
+        </div>
+    </div>
+    <div class="productDetailData">
+        <div class="productDetailText">
+            <h4>¡Prestá atención!</h4>
+            <p>Las plantas son seres vivos que requieren de nuestro cuidado y atención. El mismo amor y  atención que le darías a una mascota. </p>
+            <br>
+            <p>Una vez adquiridas las plantas, ¡no tienen cambio o devolución!</p>
+            <br>
+            <p>LAS FOTOS SON ILUSTRATIVAS. NO INCLUYE MACETA.</p>
+        </div>
+        <div class="productDetailSize">
+            <h4>Tamaños que trabajamos:</h4>
+            <p>S: Altura 25 cm Ancho 18 cm <br>
+            M: Altura 50 cm Ancho 20 cm <br>
+            L: Altura 70 cm Ancho 25 cm <br>
+            XL: Altura 110 cm Ancho 40 cm</p> 
+        </div>
+    </div>
+</section>

@@ -1,0 +1,226 @@
+[
+ {
+  "id": 1,
+  "name": "Fittonia",
+  "description": "",
+  "type": "planta",
+  "size": "small",
+  "price": "3000",
+  "fees": "500",
+  "category": "visited",
+  "image": [
+   "fittonia1.jpg",
+   "fittonia2.jpg"
+  ]
+ },
+ {
+  "id": 2,
+  "name": "Ficus elástica",
+  "description": "",
+  "type": "planta",
+  "size": "small",
+  "price": "5300",
+  "fees": "883",
+  "category": "featured",
+  "image": [
+   "ficus-elastica1.jpg",
+   "ficus-elastica2.jpg"
+  ]
+ },
+ {
+  "id": 3,
+  "name": "Nerium Oleander",
+  "description": "",
+  "type": "planta",
+  "size": "small",
+  "price": "7600",
+  "fees": "1266",
+  "category": "featured",
+  "image": [
+   "nerium-oleander1.jpg",
+   "nerium-oleander2.jpg"
+  ]
+ },
+ {
+  "id": 4,
+  "name": "Agapanthus Africanus",
+  "description": "Planta linda para poner en el balcón y tomar mate",
+  "image": [
+   "agapanthus-africanus1.jpg",
+   "agapanthus-africanus2.jpg"
+  ],
+  "type": "Planta",
+  "size": "Medium",
+  "price": 5300,
+  "fees": 883,
+  "category": "featured"
+ },
+ {
+  "id": 5,
+  "name": "Begonia Maculata",
+  "description": "",
+  "image": [
+   "begonia-maculata1.jpg",
+   "begonia-maculata2.jpg"
+  ],
+  "type": "Planta",
+  "size": "Medium",
+  "price": 5300,
+  "fees": 883,
+  "category": "visited"
+ },
+ {
+  "id": 6,
+  "name": "Syngonium Albo",
+  "description": "",
+  "image": [
+   "syngonium-albo1.jpg",
+   "syngonium-albo2.jpg"
+  ],
+  "type": "Planta",
+  "size": "Small",
+  "price": 3000,
+  "fees": 500,
+  "category": "featured"
+ },
+ {
+  "id": 7,
+  "name": "Tradescantia Pallida",
+  "description": "",
+  "image": [
+   "tradescantia-pallida1.jpg",
+   "tradescantia-pallida2.jpg"
+  ],
+  "type": "Planta",
+  "size": "Medium",
+  "price": 5300,
+  "fees": 883,
+  "category": "visited"
+ },
+ {
+  "id": 8,
+  "name": "Tradescantia Anthurium",
+  "description": "",
+  "image": [
+   "tradescantia-anthurium1.jpg",
+   "tradescantia-anthurium2.jpg"
+  ],
+  "type": "Planta",
+  "size": "Large",
+  "price": 7600,
+  "fees": 1266,
+  "category": "inSale"
+ },
+ {
+  "name": "Lavandula Angustifolia",
+  "description": "",
+  "type": "planta",
+  "size": "medium",
+  "price": "4500",
+  "fees": "750",
+  "category": "featured",
+  "image": [
+   "imgproduct_1659194722596.jpg",
+   "imgproduct_1659194722603.jpg"
+  ],
+  "id": 9
+ },
+ {
+  "name": "Exótica",
+  "description": "",
+  "type": "maceta",
+  "size": "medium",
+  "price": "4900",
+  "fees": "816",
+  "category": "featured",
+  "image": [
+   "imgproduct_1659310307694.jpg",
+   "imgproduct_1659310307714.jpg"
+  ],
+  "id": 10
+ },
+ {
+  "name": "Prisma",
+  "description": "",
+  "type": "maceta",
+  "size": "small",
+  "price": "1800",
+  "fees": "300",
+  "category": "featured",
+  "image": [
+   "imgproduct_1659310382326.jpg",
+   "imgproduct_1659310382344.jpg"
+  ],
+  "id": 11
+ },
+ {
+  "id": 12,
+  "name": "Terracota",
+  "description": "    ",
+  "type": "maceta",
+  "size": "medium",
+  "price": "2500",
+  "fees": "416",
+  "category": "visited",
+  "image": [
+   "imgproduct_1659310440381.jpg",
+   "imgproduct_1659310440403.jpg"
+  ]
+ },
+ {
+  "id": 13,
+  "name": "Tetris",
+  "description": "",
+  "type": "maceta",
+  "size": "small",
+  "price": "1200",
+  "fees": "200",
+  "category": "featured",
+  "image": [
+   "imgproduct_1659310863166.jpg",
+   "imgproduct_1659310863170.jpg"
+  ]
+ },
+ {
+  "name": "Perlita - piedra caliza",
+  "description": "",
+  "type": "cuidados",
+  "size": "small",
+  "price": "800",
+  "fees": "133",
+  "category": "inSale",
+  "image": [
+   "imgproduct_1659315243353.jpg",
+   "imgproduct_1659315243371.jpg"
+  ],
+  "id": 14
+ },
+ {
+  "name": "Sustrato",
+  "description": "",
+  "type": "cuidados",
+  "size": "small",
+  "price": "800",
+  "fees": "133",
+  "category": "inSale",
+  "image": [
+   "imgproduct_1659315274061.jpg",
+   "imgproduct_1659315274065.jpg"
+  ],
+  "id": 15
+ },
+ {
+  "name": "Neem Potásico Gotero",
+  "description": "",
+  "type": "cuidados",
+  "size": "small",
+  "price": "1200",
+  "fees": "200",
+  "category": "inSale",
+  "image": [
+   "imgproduct_1659315306543.jpg",
+   "imgproduct_1659315306545.jpg"
+  ],
+  "id": 16
+ }
+]

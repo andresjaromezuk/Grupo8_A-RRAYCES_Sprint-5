@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <%- include('../partials/head.ejs') %> 
+
+<body>
+
+   <%- include('../partials/headerAdmin.ejs') %> 
+
+   <main class="createMain">
+      <h2>Crear producto</h2>
+      <form class="createForm" action="/products" method="POST" enctype="multipart/form-data">
+         <div class="createInputContainer">
+            <label for="name">Nombre </label>
+            <input type="text" name="name" id="name" value="<%= locals.oldData ? oldData.name : null %>">
+            <% if (locals.errors && errors.name) { %>
+               <p class="errorStyle"> <%= errors.name.msg %> </p>
+            <% } %>
+            <label for="description">Descripción</label>
+            <textarea name="description" id="description" cols="30" rows="10"> <%= locals.oldData ? oldData.description : null %> </textarea>
+            <% if (locals.errors && errors.description) { %>
+               <p class="errorStyle"> <%= errors.description.msg %> </p>
+            <% } %>
+            <div class="createImages">
+               <label for="image"> Imagen </label>
+               <input type="file" name="image" id="image" multiple>
+               <% if (locals.errors && errors.image) { %>
+                  <p class="errorStyle"> <%= errors.image.msg %> </p>
+               <% } %>
+            </div>
+            <label for="type">Tipo de producto</label>
+            <!-- <input type="text" name="type" id="type" required> -->
+            <select name="type">
+               <option value=""> Elegí </option>
+               <option value="planta" <%= locals.oldData && oldData.type == "planta" ? "selected" : null %>> Planta </option>
+               <option value="maceta" <%= locals.oldData && oldData.type == "maceta" ? "selected" : null %>> Maceta </option>
+               <option value="cuidados" <%= locals.oldData && oldData.type == "cuidados" ? "selected" : null %>> Tips y cuidados </option>
+            </select>
+            <% if (locals.errors && errors.type) { %>
+               <p class="errorStyle"> <%= errors.type.msg %> </p>
+            <% } %>
+            <label>Tamaño</label>
+            <select name="size">
+               <option value=""> Elegí </option>
+               <option value="small" <%= locals.oldData && oldData.size == "small" ? "selected" : null %>> S (Small) </option>
+               <option value="medium" <%= locals.oldData && oldData.size == "medium" ? "selected" : null %>> M (Medium) </option>
+               <option value="large" <%= locals.oldData && oldData.size == "large" ? "selected" : null %>> L (Large) </option>
+               <option value="extra-large" <%= locals.oldData && oldData.size == "extra-large" ? "selected" : null %>> XL (Extra Large) </option>
+            </select>
+            <% if (locals.errors && errors.size) { %>
+               <p class="errorStyle"> <%= errors.size.msg %> </p>
+            <% } %>
+            <label for="price">Precio</label>
+            <input type="number" name="price" id="price" value="<%= locals.oldData ? oldData.price : null %>">
+            <% if (locals.errors && errors.price) { %>
+               <p class="errorStyle"> <%= errors.price.msg %> </p>
+            <% } %>
+            <div class="createBenefits">
+               <label for="fees">Cuotas</label>
+               <input type="number" name="fees" id="fees" value="<%= locals.oldData ? oldData.fees : null %>">
+               <% if (locals.errors && errors.fees) { %>
+                  <p class="errorStyle"> <%= errors.fees.msg %> </p>
+               <% } %>
+               <label>Categoría</label>
+               <select name="category">
+                  <option value=""> Elegí </option>
+                  <option value="visited" <%= locals.oldData && oldData.category == "visited" ? "selected" : null %>> Últimos visitados </option>
+                  <option value="inSale" <%= locals.oldData && oldData.category == "inSale" ? "selected" : null %>> En oferta </option>
+                  <option value="featured" <%= locals.oldData && oldData.category == "featured" ? "selected" : null %>> Elegidos del mes </option>
+                  <option value="general" <%= locals.oldData && oldData.category == "general" ? "selected" : null %>> Productos </option>
+               </select>
+               <% if (locals.errors && errors.category) { %>
+                  <p class="errorStyle"> <%= errors.category.msg %> </p>
+               <% } %>
+            </div>
+         </div>
+         <button type="submit"> Guardar </button>
+      </form>
+   </main>
+
+   <%- include('../partials/footer.ejs') %> 
+   
+</body>
+</html>

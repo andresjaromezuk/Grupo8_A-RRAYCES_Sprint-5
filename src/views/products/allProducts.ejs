@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+   <%- include('../partials/head.ejs') %> 
+<body>
+   <%- include('../partials/header.ejs') %> 
+
+    <main>
+
+        <section class="productsView">
+            <div class="titleAndFilter">
+                <h2 class="titleAllProducts">Nuestros productos</h2>
+                <form class="filterForm" action="#" method="GET">
+                    <input class="input" placeholder="Filtrar">
+                    <button class="submit"><span class="material-symbols-outlined" id="filter-alt">filter_alt</span></button>
+                </form>
+            </div>
+            <div class="products">
+                <% productos.forEach(producto => { %>
+                    <%- include('../partials/article.ejs',{producto}) %> 
+                <% }) %>
+            </div>
+        </section>
+
+    </main>
+
+    <%- include('../partials/footer.ejs') %> 
+</body>
+
+</html>

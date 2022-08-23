@@ -1,0 +1,80 @@
+[
+ {
+  "id": 1,
+  "firstName": "Emmet",
+  "lastName": "Brown",
+  "userName": "Doc",
+  "email": "backtothefuture@yahoo.com",
+  "avatar": "avatar1.jpg",
+  "password": "Delorian01",
+  "confirmPassword": "Delorian01",
+  "category": "user"
+ },
+ {
+  "id": 2,
+  "firstName": "Alberto",
+  "lastName": "Cortés",
+  "userName": "El profe",
+  "email": "cortesalberto@gmail.com",
+  "avatar": "avatar2.jpg",
+  "password": "soySaxofonista10",
+  "confirmPassword": "soySaxofonista10",
+  "category": "user"
+ },
+ {
+  "id": 3,
+  "firstName": "Nicolás",
+  "lastName": "Davite",
+  "userName": "El Nico",
+  "email": "davitenicolas_@gmail.com",
+  "avatar": "avatar3.jpg",
+  "password": "aguanteBanfield9",
+  "confirmPassword": "aguanteBanfield9",
+  "category": "user"
+ },
+ {
+  "id": 4,
+  "firstName": "Bill",
+  "lastName": "Closegate",
+  "userName": "Bill",
+  "email": "bill-closegate@gmail.com",
+  "avatar": "avatar4.jpg",
+  "password": "3openGate",
+  "confirmPassword": "3openGate",
+  "category": "user"
+ },
+ {
+  "firstName": "Gallina",
+  "lastName": "Turuleca",
+  "userName": "A puesto un huevo",
+  "email": "gallina@gmail.com",
+  "password": "123456",
+  "confirmPassword": "123456",
+  "No soy un robot": "on",
+  "images": [
+   "imguser_1659654052519.jpg"
+  ],
+  "id": 5
+ },
+ {
+  "firstName": "Andrés",
+  "lastName": "Jaromezuk",
+  "userName": "Andres",
+  "email": "ajaromezuk@hotmail.com",
+  "password": "$2a$10$QIge6mjtrLGMsNd1huoM/e81ZOTjAV8o2BIfJ1fZBjA0t73P9StLG",
+  "confirmPassword": "123456",
+  "images": "avatar-default-image.jpg",
+  "id": 6,
+  "admin": true
+ },
+ {
+  "firstName": "mantequita",
+  "lastName": "frwerwer",
+  "userName": "ffsdfsd",
+  "email": "gallina@gmail.com",
+  "password": "$2a$10$dd7ewhVt8w0uQ8fY9.gSk.dUaR19g37A/9LS7Kc8cBvN5QCgDkPbC",
+  "confirmPassword": "123456",
+  "image": "imguser_1661003948075.png",
+  "id": 7
+ }
+]

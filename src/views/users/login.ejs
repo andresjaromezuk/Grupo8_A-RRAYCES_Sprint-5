@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <%- include('../partials/head.ejs') %> 
+
+<body>
+
+   <%- include('../partials/header.ejs') %> 
+
+    <main class="userMain">
+        <section class="login">
+            <div class="loginItems">
+                <div class="inCuentaLog"> 
+                    <h4> Inicio /  Mi cuenta /  <strong> Iniciar sesión </strong> </h4>
+                </div>
+                <div class="sessionDiv">
+                    <h2>Iniciar sesión</h2>
+
+                    <%- include('../partials/buttonSN.ejs') %> 
+
+                    <form action="/users/login" method="POST" class="loginForm">
+                        <div>
+                            <input type="email" name="email" class="loginEmail" placeholder="Nombre de usuario o email">
+                            <% if (locals.errors && errors.email) { %>
+                                <p class="errorStyle"> <%= errors.email.msg %> </p>
+                            <% } %>
+                            <!-- <div class="feedback"></div> -->
+                        </div>
+                        <div>
+                            <input type="password" name="password" class="loginPassword"  placeholder="Contraseña"> 
+                            <!-- <div class="feedback"></div -->
+                        </div>
+                        <div class="userActions">
+                            <p><a href="#">¿Olvidaste tu contraseña?</a></p>
+                            <div class="rememberCheckbok">
+                                <input type="checkbox" name="rememberMe">
+                                <label>Recordarme</label>
+                            </div>
+                        </div>
+
+                        <%- include('../partials/reCaptcha.ejs') %> 
+                        
+                        <button class="startButton"> Iniciar sesión </button> 
+                    </form> 
+                    <div class="registrate">
+                        <p class="link"> <a href="/users/register">¿No tienes cuenta? ¡Registrate!</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+      <%- include('../partials/footer.ejs') %> 
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<footer>
+    <div class="socialMediaAndInfo">
+        <div class="socialMedia">
+            <h4>REDES SOCIALES</h4>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-whatsapp"></i>
+        </div>
+        <ul class="ourInfo">
+            <li><a href="">Quiénes somos</a></li>
+            <li><a href="">Políticas</a></li>
+        </ul>
+    </div>
+    <ul class="footerNav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/products/allProducts">Productos</a></li>
+        <li><a href="">Tips y cuidados</a></li>
+        <li><a href="">Envíos</a></li>
+        <li><a href="">Preguntas frecuentes</a></li>
+    </ul>
+    <div class="contactAndFooterLogin">
+        <div class="contactContainer">
+            <ul class="contact">
+                <li class="contactTitle">CONTACTO</li>
+                <li class="contactInfo"><i class="fas fa-envelope"></i>info@arrayces.com.ar</li>
+                <li class="contactInfo"><i class="fas fa-phone"></i>11-0055-5500</li>
+                <li class="contactInfo"><i class="fas fa-map-marker-alt"></i>Los Lirios 420, CABA</li>
+            </ul>
+        </div>
+        <div class="footerLogin">
+            <% if (locals.isLogged) { %>
+                <button type="button"><a href="/users/profile"> Perfil </a></button>
+                <button type="button"><a href="/users/logout"> Cerrar Sesión </a></button>
+            <% } else { %> 
+                <button type="button"><a href="/users/register">Crear cuenta</a></button>
+                <button type="button"><a href="/users/login">Iniciar sesión</a></button>
+            <% } %> 
+        </div>
+    </div>
+    <figure class="footerIsoMobile">
+        <img src="/images/LOGO_white.png" alt="Iso ARRAYCES">
+    </figure>
+    <figure class="footerIsoDesktop">
+        <img src="/images/ISO_white.png" alt="Iso ARRAYCES">
+    </figure>
+</footer>

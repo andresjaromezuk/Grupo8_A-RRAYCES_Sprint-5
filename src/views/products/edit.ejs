@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <%- include('../partials/head.ejs') %> 
+
+<body>
+
+    <%- include('../partials/headerAdmin.ejs', {producto}) %> 
+
+   <main class="editMain">
+      <h2>Editar producto</h2>
+      <form class="editForm" action="<%=producto.id %>?_method=put" method="POST" enctype="multipart/form-data">
+         <div class="editInputContainer">
+            <label for="name"> Nombre </label>
+            <input type="text" name="name" id="name" value="<%= locals.oldData ? oldData.name : producto.name %>">
+            <label for="description">Descripción</label>
+            <textarea name="description" id="description" cols="30" rows="10"> <%= locals.oldData ? oldData.description : producto.description%> </textarea>
+            <div class="editImages">
+               <label for="image"> Imagen </label>
+               <input type="file" name="image" id="image" accept=".png, .jpeg, .jpg" value="<%= locals.oldData ? oldData.image : producto.image%>" multiple>
+            </div>
+            <label for="type">Tipo de producto</label>
+            <select name="type">
+               <% if (locals.oldData && oldData.type) { %>
+                  <option value="planta" <%= oldData.type == "planta" ? "selected" : "" %>> Planta </option>
+                  <option value="maceta" <%= oldData.type == "maceta" ? "selected" : "" %>> Maceta </option>
+                  <option value="cuidados" <%= oldData.type == "cuidados" ? "selected" : "" %>> Tips y cuidados </option>
+               <% } else { %>
+                  <option value="planta" <%= producto.type == "planta" ? "selected" : "" %>> Planta </option>
+                  <option value="maceta" <%= producto.type == "maceta" ? "selected" : "" %>> Maceta </option>
+                  <option value="cuidados" <%= producto.type == "cuidados" ? "selected" : "" %>> Tips y cuidados </option>
+               <% } %>
+            </select>
+            <label>Tamaño</label>
+            <select name="size">
+               <% if (locals.oldData && oldData.size) { %>
+                  <option value="small" <%= oldData.size == "small" ? "selected" : "" %>> S (Small) </option>
+                  <option value="medium" <%= oldData.size == "medium" ? "selected" : "" %>> M (Medium) </option>
+                  <option value="large" <%= oldData.size == "large" ? "selected" : "" %>> L (Large) </option>
+                  <option value="extra-large" <%= oldData.size == "extra-large" ? "selected" : "" %>> XL (Extra Large) </option>
+               <% } else { %>
+                  <option value="small" <%= producto.size == "small" ? "selected" : "" %>> S (Small) </option>
+                  <option value="medium" <%= producto.size == "medium" ? "selected" : "" %>> M (Medium) </option>
+                  <option value="large" <%= producto.size == "large" ? "selected" : "" %>> L (Large) </option>
+                  <option value="extra-large" <%= producto.size == "extra-large" ? "selected" : "" %>> XL (Extra Large) </option>
+               <% } %>
+            </select>
+            <label for="price">Precio</label>
+            <input type="number" name="price" id="price" value="<%= producto.price%>">
+            <div class="editBenefits">
+               <label for="fees">Cuotas</label>
+               <input type="number" name="fees" id="fees" value="<%= producto.fees%>">
+               <label>Categoría</label>
+               <select name="category" >
+                  <% if (locals.oldData && oldData.category) { %>
+                     <option value="visited" <%= oldData.category == "visited" ? "selected" : "" %>> Últimos visitados </option>
+                     <option value="inSale" <%= oldData.category == "inSale" ? "selected" : "" %>> En oferta </option>
+                     <option value="featured" <%= oldData.category == "featured" ? "selected" : "" %>> Elegidos del Mes </option>
+                     <option value="general" <%= oldData.category == "general" ? "selected" : "" %>> Productos </option>
+                  <% } else { %>
+                     <option value="visited" <%= producto.category == "visited" ? "selected" : "" %>> Últimos visitados </option>
+                     <option value="inSale" <%= producto.category == "inSale" ? "selected" : "" %>> En oferta </option>
+                     <option value="featured" <%= producto.category == "featured" ? "selected" : "" %>> Elegidos del Mes </option>
+                     <option value="general" <%= producto.category == "general" ? "selected" : "" %>> Productos </option>
+                  <% } %>
+               </select>
+            </div>
+            </div>
+         <button type="submit"> Guardar </button>
+      </form>
+   </main>
+
+   <%- include('../partials/footer.ejs') %> 
+   
+</body>
+</html>
