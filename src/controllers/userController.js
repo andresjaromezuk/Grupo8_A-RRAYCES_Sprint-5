@@ -51,7 +51,7 @@ const userController = {
                 password: bcrypt.hashSync(req.body.password, 10),
                 confirmPassword: bcrypt.hashSync(req.body.confirmPassword, 10),
                 image: file ? file.filename : "avatar-default-image.jpg",
-                token: bcrypt.hashSync(String(Date.now()))
+                token: bcrypt.hashSync(String(Date.now()), 10)
             }
 
             userModel.create(newUser)
