@@ -5,8 +5,8 @@ function  userLoggedMiddleware (req, res, next) {
 
     res.locals.isLogged = false
 
-    const userCookie= req.cookies.userEmail
-    const userFromCookie = userModel.findFirstByField("email", userCookie) 
+    const userCookie= req.cookies.token
+    const userFromCookie = userModel.findFirstByField("token", userCookie) 
 
     if(userFromCookie){
         

@@ -50,7 +50,8 @@ const userController = {
                 ...req.body,
                 password: bcrypt.hashSync(req.body.password, 10),
                 confirmPassword: bcrypt.hashSync(req.body.confirmPassword, 10),
-                image: file ? file.filename : "avatar-default-image.jpg" 
+                image: file ? file.filename : "avatar-default-image.jpg",
+                token: bcrypt.hashSync(String(Date.now()))
             }
 
             userModel.create(newUser)
@@ -89,7 +90,7 @@ const userController = {
         console.log(req.session.userLogged)
         
         if(req.body.rememberMe){
-            res.cookie("userEmail", userToLogin.email,  {maxAge: 1000*60*60*24})
+            res.cookie("token", userToLogin.token,  {maxAge: 1000*60*60*24})
         }
 
         res.redirect('/users/profile')
@@ -101,7 +102,7 @@ const userController = {
     },
 
     logout: function (req, res)  {
-		res.clearCookie('userEmail');
+		res.clearCookie('token');
 		req.session.destroy();
 		return res.redirect('/');
 	},

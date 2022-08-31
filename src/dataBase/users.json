@@ -4,40 +4,44 @@
   "lastName": "Brown",
   "userName": "Emmet",
   "email": "emmet@arrayces.com",
-  "password": "$2a$10$LfHHa/Rf4D.oUjKN4AHc2Om1oRt1XEqFpV2GEb/OITaQTW4mYkVyO",
-  "confirmPassword": "$2a$10$nf6u4MDwMIzCCT2XeaKvW.CvmzFj2stCNwFVC05OnhvBx4Qm5qCDu",
+  "password": "$2a$10$5uKsUTFrr1b2Kr8wNMA.XO/SGTGkUILlJ4JiDw7.dIXixdREAC9sq",
+  "confirmPassword": "$2a$10$x4DVZDc855IXQZFPLpgtPePHmeIv14qR.zLz80CFYGn9qhOMpCkLu",
   "image": "imguser_1661253693700.jpg",
-  "id": 1,
-  "admin": true
+  "token": "$2a$10$ePUDKC5liHgoEmXm3G4lM.F06SSRkH.t1gdwvXi3JJnS9KumIMAVq",
+  "admin": true,
+  "id": 1
  },
  {
   "firstName": "Alberto",
   "lastName": "Cortés",
-  "userName": "Profe",
+  "userName": "elprofe",
   "email": "alberto@arrayces.com",
-  "password": "$2a$10$.LGtGQjFf0YYdjUx8q5vUeYXy2phAgTzp.3pInMpFWP8REtmRp7LC",
-  "confirmPassword": "$2a$10$mx1tvV3cIQZjLcEAmIvMR.I4SErcMAfbf7HvwE1N2Z1ycQ9exX6Um",
+  "password": "$2a$10$5D1tkSAS9yT3qfPiwNqbKeDM676.Vd18fkjzRmyAWXgWLc.sp86N6",
+  "confirmPassword": "$2a$10$x3fb6qOcF4480xcrg5c./.8Cof/8GLoL6Io0gazDLiFTwEPyi28CG",
   "image": "avatar-default-image.jpg",
+  "token": "$2a$10$hHBYbhBlx0HwevdrsbzODuviXgFN0.awEGqXXjW2A6D7eojx9Mwj6",
   "id": 2
  },
  {
   "firstName": "Nicolás",
   "lastName": "Davite",
-  "userName": "Elnico",
+  "userName": "elnico",
   "email": "nico@arrayces.com",
-  "password": "$2a$10$f6kMI1y19Lp1DtBYIufIYewEEbatB/sXdAarRZiZZtucSieRq6UsG",
-  "confirmPassword": "$2a$10$M.CHq0v/k9XiK1u0MPuMOe9Xv9VrORKX9YAZvotILGpaDYwEyRFxS",
+  "password": "$2a$10$McXR1Ls7EaGDDCn0wnLiReZNkP9kmw/wJDrlC4uIpV35QUr73WO2y",
+  "confirmPassword": "$2a$10$vHDD/SbnCEJUlSvkeXFFouWOj2SA3sw6ZERhqZycSJfP7wOomF.Za",
   "image": "avatar-default-image.jpg",
+  "token": "$2a$10$hrjFIclZehCG2DHK1PBMfuRFBkpOLZAUnvt8Y0Hy308sHLzr0x7vC",
   "id": 3
  },
  {
   "firstName": "Derek",
   "lastName": "Zoolander",
-  "userName": "Magnum",
+  "userName": "Derek",
   "email": "derek@arrayces.com",
-  "password": "$2a$10$cO2QJl30QEcPKJm10CW3L.4/azJk.xgz.guEm4xkgxrQxCPE7/nli",
-  "confirmPassword": "$2a$10$FXLgtchJisDuIB8ZaHb57uvs0YFkUueFU/9yM7GcLf6nU5JfUu5JC",
+  "password": "$2a$10$FCuXBlKP0Wxd3wewHwxUyeXJcY7TiDpBszmPDcSE9YnYABb1LdqJO",
+  "confirmPassword": "$2a$10$U6eOORV7/ckdjkA4KWSmvOgb7BmGo7mHKwJKcMgRdy.g4LPNMGQAK",
   "image": "imguser_1661253958158.jpg",
+  "token": "$2a$10$hMtbCKRhTN9pqPtl5XwdeuuP3o74.563q2FgpkCz2p7thJ9ptfM4i",
   "id": 4
  }
 ]
